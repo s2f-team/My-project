@@ -1,0 +1,37 @@
+.declaration-order {
+    /*Позиционирование*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    /*Блочная модель*/
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    /*Типографика*/
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: #dbff5b;
+
+    /*Оформление*/
+    background-color: #fff;
+    border: 1px solid #dbff5b;
+    border-radius: 3px;
+    opacity: 1;
+
+    /*Анимация*/
+    transition: color 500ms;
+
+    /*Разное*/
+    will-change: auto;
+}
