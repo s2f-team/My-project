@@ -21,7 +21,7 @@
             <li><a href="#" class="nav-link">Информация</a></li>
             <li><a href="news.html" class="nav-link">Новости</a></li>
             <li><a href="price.html" class="nav-link">Прайс-лист</a></li>
-            <li><a href="shop.html" class="nav-link">Магазин</a></li>
+            <li><a href="shop.html" class="nav-link-current">Магазин</a></li>
             <li><a href="#" class="nav-link">Контакты</a></li>
         </ul>
         <!--пользовательская навигация-->
@@ -33,18 +33,19 @@
 
 <!--основной блок-->
 <main class="container">
-    <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+    <h1 class="page-title">СРЕДСТВА ДЛЯ УХОДА</h1>
     <nav class="breadcrumbs">
         <ul class="breadcrumbs-list">
             <li><a href="index.html" class="breadcrumbs-link">Главная</a></li>
             <li><a href="index.html" class="breadcrumbs-link">Магазин</a></li>
-            <li><a href="#" class="breadcrumbs-link current">Средства для ухода</a></li>
+            <li>href="#" class="breadcrumbs-link current">Средства для ухода</li>
         </ul>
     </nav>
 
     <!--боковая панель с фильтрами-->
-    <aside class="sidebar">
-        <form action="#" method="post">
+    <section class="filters">
+        <h2 class="invisible">Фильтр товаров</h2>
+        <!--<form action="#" method="post">
             <h2>Производители:</h2>
             <input id="baxter" name="baxter" type="checkbox" value="baxter" checked>
             <label for="baxter">Baxter of California</label>
@@ -68,83 +69,121 @@
             <label for="accessories">Аксессуары</label>
 
             <button type="submit" class="btn">Показать</button>
-        </form>
+        </form>-->
 
-    </aside>
+    </section>
 
     <!--список товаров-->
-    <section class="items">
+    <section class="catalog">
         <h2 class="invisible">Каталог средств для ухода</h2>
-        <ul class="items-list">
-            <li>
-                <div class="current-item">
-                    <img src="#" alt="Набор для путешествий" width="220px" height="165px">
-                    <p class="item-description">Набор для путешествий</p>
-                    <p class="item-description">«Baxter of California»</p>
-                    <div class="item-functions">
-                        <span class="item-price">2900</span>
-                        <a href="item.html" class="btn">Купить</a>
-                    </div>
-                </div>
+        <ul class="catalog-list">
+
+            <li class="catalog-item">
+                <!--заголовок товара-->
+                <h3>
+                    <a href="item.html">
+                        <span class="item-category">Набор для путешествий</span>
+                        <span class="item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <!--описание товара-->
+                <p>
+                    <a href="item.html"><img src="#" alt="Набор для путешествий" width="220px" height="165px"></a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>2900 Р</b>
+                    <a href="#" class="btn">Купить</a>
+                </p>
             </li>
 
-            <li>
-                <div class="current-item">
-                    <img src="#" alt="Увлажняющий кондиционер «Baxter of California»" width="220px" height="165px">
-                    <p class="item-description">Увлажняющий кондиционер</p>
-                    <p class="item-description">«Baxter of California»</p>
-                    <div class="item-functions">
-                        <span class="item-price">2900</span>
-                        <a href="item.html" class="btn">Купить</a>
-                    </div>
-                </div>
+            <li class="catalog-item">
+                <!--заголовок товара-->
+                <h3>
+                    <a href="item.html">
+                        <span class="item-category">Набор для путешествий</span>
+                        <span class="item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <!--описание товара-->
+                <p>
+                    <a href="item.html"><img src="#" alt="Набор для путешествий" width="220px" height="165px"></a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>2900 Р</b>
+                    <a href="#" class="btn">Купить</a>
+                </p>
             </li>
 
-            <li>
-                <div class="current-item">
-                    <img src="#" alt="Гель для волос «SUAVECITO»" width="220px" height="165px">
-                    <p class="item-description">Гель для волос</p>
-                    <p class="item-description">«SUAVECITO»</p>
-                    <div class="item-functions">
-                        <span class="item-price">290</span>
-                        <a href="item.html" class="btn">Купить</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="current-item">
-                    <img src="#" alt="Набор для путешествий" width="220px" height="165px">
-                    <p class="item-description">Набор для путешествий</p>
-                    <p class="item-description">«Baxter of California»</p>
-                    <div class="item-functions">
-                        <span class="item-price">2900</span>
-                        <a href="item.html" class="btn">Купить</a>
-                    </div>
-                </div>
+            <li class="catalog-item">
+                <!--заголовок товара-->
+                <h3>
+                    <a href="item.html">
+                        <span class="item-category">Набор для путешествий</span>
+                        <span class="item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <!--описание товара-->
+                <p>
+                    <a href="item.html"><img src="#" alt="Набор для путешествий" width="220px" height="165px"></a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>2900 Р</b>
+                    <a href="#" class="btn">Купить</a>
+                </p>
             </li>
 
-            <li>
-                <div class="current-item">
-                    <img src="#" alt="Увлажняющий кондиционер «Baxter of California»" width="220px" height="165px">
-                    <p class="item-description">Увлажняющий кондиционер</p>
-                    <p class="item-description">«Baxter of California»</p>
-                    <div class="item-functions">
-                        <span class="item-price">2900</span>
-                        <a href="item.html" class="btn">Купить</a>
-                    </div>
-                </div>
+            <li class="catalog-item">
+                <!--заголовок товара-->
+                <h3>
+                    <a href="item.html">
+                        <span class="item-category">Набор для путешествий</span>
+                        <span class="item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <!--описание товара-->
+                <p>
+                    <a href="item.html"><img src="#" alt="Набор для путешествий" width="220px" height="165px"></a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>2900 Р</b>
+                    <a href="#" class="btn">Купить</a>
+                </p>
             </li>
 
-            <li>
-                <div class="current-item">
-                    <img src="#" alt="Гель для волос «SUAVECITO»" width="220px" height="165px">
-                    <p class="item-description">Гель для волос</p>
-                    <p class="item-description">«SUAVECITO»</p>
-                    <div class="item-functions">
-                        <span class="item-price">290</span>
-                        <a href="item.html" class="btn">Купить</a>
-                    </div>
-                </div>
+            <li class="catalog-item">
+                <!--заголовок товара-->
+                <h3>
+                    <a href="item.html">
+                        <span class="item-category">Набор для путешествий</span>
+                        <span class="item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <!--описание товара-->
+                <p>
+                    <a href="item.html"><img src="#" alt="Набор для путешествий" width="220px" height="165px"></a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>2900 Р</b>
+                    <a href="#" class="btn">Купить</a>
+                </p>
+            </li>
+
+            <li class="catalog-item">
+                <!--заголовок товара-->
+                <h3>
+                    <a href="item.html">
+                        <span class="item-category">Набор для путешествий</span>
+                        <span class="item-title">«Baxter of California»</span>
+                    </a>
+                </h3>
+                <!--описание товара-->
+                <p>
+                    <a href="item.html"><img src="#" alt="Набор для путешествий" width="220px" height="165px"></a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>2900 Р</b>
+                    <a href="#" class="btn">Купить</a>
+                </p>
             </li>
 
         </ul>
@@ -156,7 +195,7 @@
     <section class="pagination">
         <ul>
             <li><a href="#" class="pagination-item">1</a></li>
-            <li><a href="#" class="pagination-item">2</a></li>
+            <li><a href="#" class="pagination-item pagination-item-current">2</a></li>
             <li><a href="#" class="pagination-item">3</a></li>
             <li><a href="#" class="pagination-item">4</a></li>
         </ul>
@@ -184,5 +223,14 @@
         <a href="#" class="btn">HTML Academy</a>
     </p>
 </footer>
+
+<!--Modal block entrance -->
+<section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите, пожалуйста, свой логин и пароль</p>
+    <!--форма-->
+    <span class="modal-close">x</span>
+</section>
+
 </body>
 </html>
