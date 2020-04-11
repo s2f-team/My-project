@@ -9,7 +9,10 @@ body {
     color: white;
     text-transform: uppercase;
 
-    background-color: #dddddd;
+    background-color: black;
+    background-image: url("../img/background-pic.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 *,
@@ -18,10 +21,28 @@ body {
     box-sizing: border-box;
 }
 
+h2{
+    font-size: 30px;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
+
+.invisible {
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 17px 34px;
+
+    color: white;
+
+    background-color: black;
+}
+
 
 /*Navigation*/
 
@@ -75,12 +96,90 @@ a {
 
 /*Main*/
 
-.container{
+.container {
     margin: 0 auto;
     padding: 0 10px;
 
-    background-color: #969696;
+    width: 960px;
+
+    /*background-color: #969696;*/
 }
+
+.advantages {
+    margin-bottom: 75px;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-item {
+    padding: 0 15px;
+    width: 33%;
+
+    text-align: center;
+
+    list-style: none;
+}
+
+.advantage-item-title {
+    margin-top: 0;
+
+    font-size: 30px;
+}
+
+.advantage-item p {
+    margin-bottom: 0;
+}
+
+.container-inner {
+    display: flex;
+    justify-content: center;
+
+    color: black;
+
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat;
+}
+
+.container-inner h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.news {
+    padding: 55px 35px 55px 80px;
+    width: 50%;
+
+}
+
+.news-list{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.news-item{
+    margin-bottom: 35px;
+}
+
+.news-item p{
+    margin: 0;
+}
+
+.news-item time{
+    text-transform: lowercase;
+}
+
+.gallery {
+    width: 50%;
+}
+
 
 
 
