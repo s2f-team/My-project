@@ -281,10 +281,28 @@ a {
     left: 13px;
 }
 
+.footer-inner{
+    margin-top: 65px;
+
+    color: white;
+
+    background-image: url("../img/background-dark.jpg");
+    background-repeat: repeat;
+}
+
 .footer-inner-container{
     display: flex;
+    justify-content: space-between;
 
+    margin: 0 auto;
 
+    width: 940px;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright{
+    width: 33%;
 }
 
 
