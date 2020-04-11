@@ -58,7 +58,16 @@ a {
     text-decoration: none;
 }
 
-.btn{
+.inner-container {
+    color: black;
+
+    background-color: #f8f5f2;
+    background-image: url("../img/background.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.btn {
     font: inherit;
 
     text-align: center;
@@ -72,11 +81,20 @@ a {
 
 .btn:hover,
 .btn:focus,
-.btn:active{
+.btn:active {
     background-color: #663d15;
 }
 
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-size: 16px;
     line-height: 20px;
     color: white;
@@ -86,12 +104,30 @@ a {
 
 .site-navigation,
 .user-navigation {
+    margin: 0;
     list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
     color: white;
+}
+
+.site-navigation {
+display: inline;
+    width: 620px;
+}
+
+.user-navigation {
+
+    width: 140px;
+}
+
+.main-header-logo {
+    order: 1;
+
+    background-color: transparent;
+
 }
 
 .site-navigation a:hover,
@@ -128,31 +164,31 @@ a {
     line-height: 42px;
 }
 
-.news-list{
+.news-list {
     list-style: none;
 }
 
-.news-item time{
+.news-item time {
     text-transform: none;
 }
 
-.gallery-content{
+.gallery-content {
     background-color: #dddddd;
     border: 7px solid #ffffff;
 }
 
-.appointment-item input{
+.appointment-item input {
     font: inherit;
 
     background-color: transparent;
     border: 2px solid black;
 }
 
-.appointment-item input:focus{
+.appointment-item input:focus {
     background-color: #663d15;
 }
 
-.main-footer{
+.main-footer {
     color: white;
 
     background-color: #212121;
@@ -161,40 +197,40 @@ a {
     background-repeat: repeat;
 }
 
-.footer-contacts a{
+.footer-contacts a {
     color: white;
     text-decoration: underline;
 }
 
 .footer-contacts a:hover,
-.footer-contacts a:focus{
+.footer-contacts a:focus {
     text-decoration: none;
 }
 
-.footer-social{
+.footer-social {
     text-align: center;
 }
 
-.footer-social ul{
+.footer-social ul {
     list-style: none;
 }
 
-.social-button{
+.social-button {
     color: white;
 }
 
-.footer-copyright{
+.footer-copyright {
     text-align: center;
 }
 
 .footer-copyright .btn:hover,
-.footer-copyright .btn:focus{
+.footer-copyright .btn:focus {
     color: black;
 
     background-color: #fff;
 }
 
-.modal{
+.modal {
     color: black;
 
     background-color: #f8f5f2;
@@ -203,13 +239,13 @@ a {
     background-repeat: repeat;
 }
 
-.modal h2{
+.modal h2 {
     font-size: 30px;
     line-height: 42px;
 }
 
 .login-form input[type="text"],
-.login-form input[type="password"]{
+.login-form input[type="password"] {
     font: inherit;
     color: black;
     text-transform: uppercase;
@@ -218,17 +254,28 @@ a {
     border: 2px solid black;
 }
 
-.login-form input:focus{
+.login-form input:focus {
     border-color: #663d15;
 }
 
 .login-checkbox:hover,
-.login-checkbox:focus{
+.login-checkbox:focus {
     color: #663d15;
 }
 
+/*Карточка товара*/
 
+.product-photo-prev {
+    list-style: none;
+}
 
+.product-photo-prev li {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+}
+
+.product-photo-full {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+}
 
 
 
