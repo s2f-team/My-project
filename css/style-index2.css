@@ -142,7 +142,7 @@ a {
 
 .user-nav-link:hover::before,
 .user-nav-link:focus:before,
-.user-nav-link:active::before{
+.user-nav-link:active::before {
     opacity: 1;
 }
 
@@ -185,13 +185,29 @@ a {
 
 .advantage-item-title {
     margin-top: 0;
+    margin-bottom: 65px;
 
     position: relative;
 
     font-size: 30px;
 }
 
+.advantage-item-title::after {
+    content: "";
 
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+
+    margin-left: -10px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #fff;
+
+    transform: rotate(45deg);
+}
 
 .advantage-item p {
     margin-bottom: 0;
@@ -399,6 +415,190 @@ a {
     color: black;
 
     background-color: #fff;
+}
+
+.modal {
+    position: fixed;
+
+    color: black;
+
+    background-color: #f8f3f0;
+    background-image: url("/img/background.jpg");
+    background-repeat: repeat;
+    background-position: 0 0;
+
+    box-shadow: 0 20px 35px rgba(0, 0, 0, .3);
+}
+
+.modal-login {
+    top: 120px;
+    left: 50%;
+
+    margin-left: -230px;
+
+    width: 460px;
+    padding: 50px 80px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: 2px;
+
+    width: 19px;
+    height: 4px;
+
+    background-color: #d0d0d0;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-login h2 {
+    margin: 0 0 25px 0;
+}
+
+.modal-description {
+    margin: 0 0 10px 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 300px;
+
+    padding: 10px 40px 10px 15px;
+
+    font: inherit;
+    color: black;
+
+    text-transform: uppercase;
+
+    background-color: #f8f5f2;
+    border: 2px solid black;
+ }
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+.login-icon-user {
+    background-image: url("/img/user.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.login-icon-password {
+    background-image: url("/img/lock.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.login-password-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 15px 0;
+}
+
+.restore {
+    color: black;
+    text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus,
+.restore:active {
+    text-decoration: none;
+}
+
+.btn-modal {
+    display: block;
+    width: 300px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.login-checkbox {
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid black;
+}
+
+.login-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 2px;
+
+    width: 10px;
+    height: 2px;
+
+    background-color: black;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
 }
 
 

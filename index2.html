@@ -185,5 +185,40 @@
     </div>
 </footer>
 
+<!--Modal block entrance -->
+<section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+    <!--форма-->
+    <form action="#" class="login-form" method="post">
+        <p>
+            <label for="user-login" class="invisible">Логин</label>
+            <input type="text" class="login-icon-user" id="user-login" name="user-login" placeholder="Логин">
+        </p>
+        <p>
+            <label for="user-password" class="invisible">Логин</label>
+            <input type="password" class="login-icon-password" id="user-password" name="user-password"
+                   placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember" class="invisible">
+                <span class="checkbox-indicator"></span>
+                Запомните меня</label>
+            <a href="#" class="restore">Я забыл пароль!</a>
+        </p>
+        <button class="btn btn-modal" type="button">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<!--Modal block map -->
+<section class="modal modal-map">
+    <h2 class="invisible">Как до нас добраться?</h2>
+    <p>
+        <img src="#" width="780" height="560" alt="Офис компании барбершоп Бородинский. Адрес такой-то">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
 </body>
 </html>
