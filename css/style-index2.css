@@ -54,7 +54,7 @@ a {
 }
 
 .gallery-btn,
-.submit-btn{
+.submit-btn {
 
     width: 140px;
 
@@ -67,7 +67,7 @@ a {
     border: none;
 }
 
-.submit-btn{
+.submit-btn {
     margin-top: 10px;
 
     width: 100%;
@@ -238,36 +238,36 @@ a {
     margin-right: 15px;
 }
 
-.contacts{
+.contacts {
     padding: 55px 35px 55px 80px;
     width: 50%;
 }
 
-.contacts p{
+.contacts p {
     margin-top: 0;
     margin-bottom: 35px;
 }
 
-.btn-contacts{
+.btn-contacts {
     margin-right: 15px;
 }
 
-.form-row-container{
+.form-row-container {
     display: flex;
     justify-content: space-between;
 }
 
-.appointment{
+.appointment {
     padding: 55px 80px 55px 80px;
     width: 50%;
 }
 
-.appointment-item{
+.appointment-item {
     margin: 0 0 16px 0;
 }
 
 
-.appointment-item input{
+.appointment-item input {
     display: block;
     width: 140px;
 
@@ -276,13 +276,14 @@ a {
     border: 2px solid black;
 }
 
-.appointment-item label{
+.appointment-item label {
     position: relative;
     left: 13px;
 }
 
-.footer-inner{
+.footer-inner {
     margin-top: 65px;
+    height: 193px;
 
     color: white;
 
@@ -290,7 +291,7 @@ a {
     background-repeat: repeat;
 }
 
-.footer-inner-container{
+.footer-inner-container {
     display: flex;
     justify-content: space-between;
 
@@ -301,8 +302,72 @@ a {
 
 .footer-contacts,
 .footer-social,
-.footer-copyright{
+.footer-copyright {
+    margin-top: 60px;
     width: 33%;
+}
+
+.footer-contacts a {
+    text-decoration: underline;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+
+    margin: 18px auto;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-social li {
+    display: inline-block;
+
+    width: 43px;
+    height: 43px;
+    margin: 0 3px;
+
+    text-align: center;
+
+    background-color: black;
+}
+
+.footer-social li:hover,
+.footer-social li:focus,
+.footer-social li:active {
+    background-color: #fff;
+}
+
+
+.footer-copyright {
+    text-align: right;
+}
+
+.footer-copyright b {
+    position: relative;
+   right: 30px;
+}
+
+.btn-copyright {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 13px 28px;
+    width: 140px;
+
+    text-align: center;
+}
+
+.btn-copyright:hover,
+.btn-copyright:focus,
+.btn-copyright:active {
+    color: black;
+
+    background-color: #fff;
 }
 
 
